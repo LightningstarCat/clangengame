@@ -11,8 +11,7 @@ from scripts.game_structure.game_essentials import game
 
 #fixing year to 2000 so we can use date comparison functions.
 #2000 is used because it is a leap year.
-_today = "2000-10-31"
-
+_today = datetime.datetime.strptime("2000-10-31", "%Y-%m-%d").date()
 @dataclass
 class DateInfo:
     """
