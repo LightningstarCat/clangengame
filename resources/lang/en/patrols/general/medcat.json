@@ -5515,5 +5515,269 @@
                 "art": "gen_train_argueAA"
             }
         ]
-    }
+    },
+{
+        "patrol_id": "gen_mooseofdoom",
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["herb_gathering"],
+        "tags": [],
+        "patrol_art": "wtlnd_train_moosemyth_storylocked1",
+        "min_cats": 2,
+        "max_cats": 6,
+        "min_max_status": {
+            "apprentice": [-1, -1],
+            "medicine cat": [1, 6],
+            "healer cats": [1, 6],
+            "normal adult": [-1, -1]
+        },
+        "weight": 5,
+        "intro_text": "The patrol comes apon a huge moose with glowing eyes and a taste for cats.",
+        "decline_text": "The moose decides not to consume their souls.",
+        "chance_of_success": 10,
+        "success_outcomes": [
+            {
+                "text": "A big ol' turtle comes and shoots lasers at the moose, driving it off as it whisks you onto its back and flies you back to camp.",
+                "exp": 20,
+                "weight": 20,
+                "art": "bch_hunt_turtle",
+                "herbs": ["random_herbs"],
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": false,
+                        "values": ["platonic", "respect", "comfort", "trust"],
+                        "amount": 5
+                    }
+                ]
+            },
+            {
+                "text": "Some goofy squirrels distract the bloodthirsty moose long enough for the patrol to escape, and then the moose becomes besties with the squirrels. They invite the clan to a sleepover, but you politely decline.",
+                "exp": 20,
+                "weight": 10,
+                "art": "fst_hunt_squirrelchas",
+                "herbs": ["random_herbs"],
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": false,
+                        "values": ["platonic", "respect", "comfort", "trust"],
+                        "amount": 5
+                    }
+                ]
+            },
+            {
+                "text": "The patrol sees an abandoned twoleg den and run inside, hiding from the vicious moose.",
+                "exp": 20,
+                "weight": 5,
+                "art": "gen_bord_abandontwolegdis",
+                "herbs": ["random_herbs"],
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": false,
+                        "values": ["platonic", "respect", "comfort", "trust"],
+                        "amount": 5
+                    }
+                ]
+            },
+            {
+                "text": "You meet a lil' bat dude who saves you from the moose.",
+                "exp": 20,
+                "weight": 20,
+                "art": "kittybat_INTRO",
+                "stat_trait": [
+                    "compassionate",
+                    "faithful",
+                    "loving",
+                    "responsible",
+                    "thoughtful",
+                    "wise"
+                ],
+                "herbs": ["random_herbs"],
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": false,
+                        "values": ["platonic", "respect", "comfort", "trust"],
+                        "amount": 5
+                    }
+                ]
+            },
+            {
+                "text": "An equally terrifying creature leaps from a nearby rock, maiming the moose and allowing you to escape.",
+                "exp": 20,
+                "weight": 20,
+                "art": "kittylion_INTRO",
+                "herbs": ["many_herbs", "random_herbs"],
+                "stat_skill": [
+                    "CLEVER,1",
+                    "INSIGHTFUL,1",
+                    "SENSE,1",
+                    "HEALER,1"
+                ],
+                "relationships": [
+                    {
+                        "cats_to": ["s_c"],
+                        "cats_from": ["patrol"],
+                        "mutual": false,
+                        "values": ["platonic", "respect", "comfort", "trust"],
+                        "amount": 5
+                    }
+                ]
+            },
+            {
+                "text": "The moose actually is really nice and gives s_c a hug.",
+                "exp": 20,
+                "weight": 5,
+                "stat_trait": [
+                    "childish",
+                    "playful",
+                    "charismatic"
+                ],
+                "herbs": ["random_herbs"],
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": false,
+                        "values": ["platonic", "respect", "comfort", "trust"],
+                        "amount": 10
+                    }
+                ]
+            },
+            {
+                "text": "s_c shapeshifts into a froggo and gives the moose therapy. The moose resolves their identity crisis and decides to go vegan.",
+                "exp": 20,
+                "weight": 20,
+                "art": "loveland_frog_INTRO",
+                "stat_trait": [
+                    "compassionate",
+                    "faithful",
+                    "loving",
+                    "responsible",
+                    "thoughtful",
+                    "wise",
+                    "calm"
+                ],
+                "herbs": ["random_herbs"],
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": false,
+                        "values": ["platonic", "respect", "comfort", "trust"],
+                        "amount": 5
+                    }
+                ]
+            },
+            {
+                "text": "s_c decides not to get eaten and becomes a ghosty ghost to save the patrol, and then reverts to their usual form.",
+                "exp": 20,
+                "weight": 20,
+                "art": "scaryghost_INTRO",
+                "stat_trait": [
+                    "ambitious",
+                    "bold",
+                    "daring",
+                    "strict",
+                    "confident",
+                    "adventurous",
+                    "competitive"
+                ],
+                "herbs": ["random_herbs", "daisy"],
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": false,
+                        "values": ["respect"],
+                        "amount": 5
+                    }
+                ]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "The patrol doesn't get much done because of that.",
+                "exp": 0,
+                "weight": 20,
+                "art": "gen_med_sunny",
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": false,
+                        "values": ["platonic", "respect", "comfort", "trust"],
+                        "amount": -5
+                    }
+                ]
+            },
+            {
+                "text": "The patrol gets into an argument and returns home with tails lashing, shooting annoyed looks at each other.",
+                "exp": 0,
+                "weight": 5,
+                "art": "gen_train_argueMM",
+                "relationships": [
+                    {
+                        "cats_to": ["patrol"],
+                        "cats_from": ["patrol"],
+                        "mutual": false,
+                        "values": ["platonic", "respect", "comfort", "trust"],
+                        "amount": -5
+                    }
+                ]
+            },
+            {
+                "text": "s_c wasn't able to relax and kept the rest of the patrol from relaxing with all {PRONOUN/s_c/poss} {VERB/r_c/movement/movements}, making the patrol return to camp grumpy and with no herbs.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait":[
+                    "nervous",
+                    "insecure",
+                    "shameless",
+                    "oblivious"
+                ],
+                "relationships": [
+                    {
+                        "cats_to": ["s_c"],
+                        "cats_from": ["patrol"],
+                        "mutual": false,
+                        "values": ["platonic"],
+                        "amount": -5
+                    }
+                ]
+            },
+            {
+                "text": "s_c takes the best spot for {PRONOUN/s_c/self} and ignores all attempts at conversation, souring the mood of the patrol.",
+                "exp": 0,
+                "art": "gen_med_sunny",
+                "weight": 20,
+                "stat_trait": [
+                    "troublesome",
+                    "lonesome",
+                    "bloodthirsty",
+                    "cold",
+                    "gloomy",
+                    "shameless",
+                    "arrogant",
+                    "grumpy",
+                    "oblivious"
+                ],
+                "relationships": [
+                    {
+                        "cats_to": ["s_c"],
+                        "cats_from": ["patrol"],
+                        "mutual": false,
+                        "values": ["respect", "comfort"],
+                        "amount": -5
+                    }
+                ]
+            }
+        ]
+    },
 ]
